@@ -8,15 +8,14 @@ FRT1 = 0
 
 
 class ControloV1(Controlo):
-    def __init__(self, moveToTarget):
-
-        self.moveToTarget = moveToTarget
+    def __init__(self, move_to_target, avoid_obstacle):
+        self.avoidObstacle = avoid_obstacle
+        self.moveToTarget = move_to_target
 
     def processar(self, per):
-        if per.colisao == False:
-            act = self.moveToTarget.moveToTarget(per)
-            acesso = (1, act)
+        act = self.avoidObstacle.nextMove(per)
+        if act is None:
+            move = (1, self.moveToTarget.nextMove(per))
         else:
-            acesso = (1, DIR1)
-
-        return acesso
+            move = (1, act)
+        return move

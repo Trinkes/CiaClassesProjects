@@ -1,5 +1,5 @@
 class Algorithm:
 
 
-    def moveToTarget(self, per):
+    def nextMove(self, per):
         abstract

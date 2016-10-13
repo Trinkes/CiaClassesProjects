@@ -7,7 +7,7 @@ from src.controllerImp.controloV1 import FRT1, ESQ1, DIR1
 
 
 class MoveToTargetV1(Algorithm):
-    def moveToTarget(self, per):
+    def nextMove(self, per):
         frt = per[FRT].pot_alvo
         esq = per[ESQ].pot_alvo
         xtype = [frt, esq, per[DIR].pot_alvo]
