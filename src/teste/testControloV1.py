@@ -7,5 +7,5 @@ from src.controllerImp.controloV1 import ControloV1
 
 psa.iniciar("../amb/amb2.das")
 
-agente = AgenteProspector(ControloV1(MoveToTargetV1(), AvoidObstacle()))
+agente = AgenteProspector(ControloV1([AvoidObstacle(), MoveToTargetV1()]))
 psa.executar(agente)
