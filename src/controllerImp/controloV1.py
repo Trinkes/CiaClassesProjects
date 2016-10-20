@@ -16,4 +16,4 @@ class ControloV1(Controlo):
         for algorithm in self.algorithms:
             act = algorithm.nextMove(per)
             if act is not None:
-                return 1, act
+                return act

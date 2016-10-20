@@ -8,6 +8,7 @@ class AgenteProspector(Agente):
     
     
     def __init__(self, controller):
+        # type: (object) -> object
 
         self.controlo = controller
 

@@ -15,8 +15,8 @@ class MoveToTargetV1(Algorithm):
         xtype.sort()
 
         if xtype[2] == frt:
-            return FRT1
+            return 1, FRT1
         elif xtype[2] == esq:
-            return ESQ1
+            return 1, ESQ1
         else:
-            return DIR1
+            return 1, DIR1
