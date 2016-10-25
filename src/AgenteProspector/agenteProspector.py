@@ -1,7 +1,4 @@
-import psa
 from psa.agente import Agente
-
-from src.controllerImp.controloV1 import ControloV1
 
 
 class AgenteProspector(Agente):
@@ -24,6 +21,3 @@ class AgenteProspector(Agente):
             self.actuador.actuar(accao)
 
 #interface Controlo
-
-
-
