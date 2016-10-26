@@ -1,13 +1,11 @@
-import psa
 from psa.agente import Agente
-
-from src.controllerImp.controloV1 import ControloV1
 
 
 class AgenteProspector(Agente):
     
     
     def __init__(self, controller):
+        # type: (object) -> object
 
         self.controlo = controller
 
@@ -23,6 +21,3 @@ class AgenteProspector(Agente):
             self.actuador.actuar(accao)
 
 #interface Controlo
-
-
-
